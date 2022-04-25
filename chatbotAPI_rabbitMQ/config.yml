@@ -1,0 +1,33 @@
+# config for pluginAPI  20211129
+# 
+#
+Version: "0.1"
+Debug: true
+#debugMode: 'test','debug','release'
+debugMode: debug
+
+#log file name
+logFile: comcloud.log
+#mysql config
+mysql:
+  ip: ""
+  port: ""
+  db: ""
+  user: ""
+  pass: ""
+  maxlifetime: 21600   // 每條連線的存活時間 (sec)
+  maxconn: 100  // 最大連線數
+  idleconn: 20  // 最大閒置連線數
+#rabbitMQ config
+rabbitMQ:
+  ip: ""
+  port: ""
+  name: ""
+  user: ""
+  pass: ""
+#influx config
+influx:
+  ip: ""
+  port: ""
+  db: ""
+  precision: ""
