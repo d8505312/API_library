@@ -1,0 +1,50 @@
+# config for backendAPI  20211129
+# 
+#
+Version: "0.1"
+Debug: true
+#debugMode: 'test','debug','release'
+debugMode: debug
+
+#InsecureSkipVerify
+isSkipVerify: true
+
+#port
+port: 9000
+#log file name
+logFile: comcloud.log
+#mysql config
+mysql:
+  ip: "192.168.0.72"
+  port: "3306"
+  db: "sms2"
+  user: "sms2"
+  pass: "e8d.com.."
+  maxlifetime: 21600   // 每條連線的存活時間 (sec)
+  maxconn: 100  // 最大連線數
+  idleconn: 20  // 最大閒置連線數
+#influx config
+influx:
+  ip: "192.168.0.72"
+  port: "8086"
+  db: "sms2"
+  precision: "ns"
+#smsAPI config
+smsAPI:
+  ip: "smstest.e8d.tw/every8d30"
+  delay: 5
+#
+# tokenExpirePeriod (sec)
+tokenExpirePeriod: 86400
+
+# fileDir
+fileDir: "./loadfile/"
+# stickerUrl
+stickerUrl: "https://test.gayu.biz:8029/sticker/"
+# ssl
+cert: "./keys/server.crt"
+key: "./keys/server.key"
+# trustedproxies
+trustedproxies: "192.168.0.72"
+# chatroomUrl
+chatroomUrl: "t.talkod.im/"
